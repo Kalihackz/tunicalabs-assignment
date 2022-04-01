@@ -34,11 +34,11 @@
 
 <img src="https://via.placeholder.com/1270x120/0d1117/ff00c8?text=Working" />
   
-Landing Page : [ https://tunicalabs-abir-kalihackz.vercel.app/ ] will contain respective pages links.
-Sign In Page : [ https://tunicalabs-abir-kalihackz.vercel.app/signin ] Contains the replica of the sign in wire frame.
-Sign Up Page : [ https://tunicalabs-abir-kalihackz.vercel.app/signup ] Contains the replica of the sign up wire frame.
-Admin Page : [ https://tunicalabs-abir-kalihackz.vercel.app/dashboard ] Contains the replica of the dashboard wire frame.
-Upload Page : [ https://tunicalabs-abir-kalihackz.vercel.app/upload ] Contains the replica of the upload wire frame. 
+Landing Page : [ https://tunicalabs-abir-kalihackz.vercel.app/ ] will contain respective pages links.<br/>
+Sign In Page : [ https://tunicalabs-abir-kalihackz.vercel.app/signin ] Contains the replica of the sign in wire frame.<br/>
+Sign Up Page : [ https://tunicalabs-abir-kalihackz.vercel.app/signup ] Contains the replica of the sign up wire frame.<br/>
+Admin Page : [ https://tunicalabs-abir-kalihackz.vercel.app/dashboard ] Contains the replica of the dashboard wire frame.<br/>
+Upload Page : [ https://tunicalabs-abir-kalihackz.vercel.app/upload ] Contains the replica of the upload wire frame. <br/>
 
 <img src="https://via.placeholder.com/1270x120/0d1117/ff00c8?text=APIS+Used" />
 
