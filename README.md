@@ -13,7 +13,11 @@
 </p>
 
  <br>
- 
+
+<p align="center"><strong>NOTE : As we are using free tier for mongodb more than 3 concurrent connection may result to 404</strong></p>
+
+<br />
+
 <img src="https://via.placeholder.com/1270x120/0d1117/ffb300?text=Live+URL" />
 
 <p align="center"><strong>https://tunicalabs-abir-kalihackz.vercel.app/ </strong></p>
