@@ -1,0 +1,151 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #700b0b;
+
+    // Signin Interface
+    .signin{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        row-gap: 20px;
+        padding: 30px;
+        border-radius: 15px;
+
+        // Title
+        h2{
+            text-align: center;
+            color: rgb(196, 29, 29);
+        }
+
+        // Email and Password Field
+        input[type='text'], input[type='password']{
+            border: 0;
+            width: 270px;
+            outline: none;
+            height: 30px;
+			box-shadow: inset 0 0 0 2em white;
+        }
+
+        // Submit Button
+        input[type='submit']{
+            border: 0;
+            width: 100%;
+            background-color: transparent;
+            font-size: 17px;
+            color: white;
+			cursor: pointer;
+			outline: none;
+        }
+
+        // Email and Password input surrounding div
+        .email, .password{
+            border: 2px solid gray;
+            padding: 5px 15px;
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        // The Check functionality
+        .tos{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .check {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                cursor: pointer;
+                font-size: 22px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+              
+            // Hide the browser's default checkbox
+            .check input[type='checkbox'] {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+              
+			// Create a custom checkbox
+			.checkmark {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 22px;
+				width: 22px;
+				border: 2px solid gray;
+				border-radius: 4px;
+			}
+			
+			// When the checkbox is checked, add a dark red background
+			.check input:checked ~ .checkmark {
+				background-color: rgb(134, 17, 17);
+			}
+			
+			// Create the checkmark/indicator (hidden when not checked)
+			.checkmark:after {
+				content: "";
+				position: absolute;
+				display: none;
+			}
+			
+			// Show the checkmark when checked
+			.check input:checked ~ .checkmark:after {
+				display: block;
+			}
+			
+			// Style the checkmark/indicator
+			.check .checkmark:after {
+				left: 6px;
+				top: 2px;
+				width: 5px;
+				height: 10px;
+				border: solid white;
+				border-width: 0 3px 3px 0;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+            p{
+                margin: 0;
+                font-size: 15px;
+            }
+        }
+
+        // Submit
+        .submit{
+            background-color: rgb(119, 18, 18);
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        // Sign up link
+        .signup{
+            text-align: center;
+            font-size: 14px;
+            span{
+                color: blue;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Mobile responsive
+@media (max-width: 600px) {
+	.tos{
+		p{
+			position: relative;
+			top: 2px;
+		}
+	}
+}

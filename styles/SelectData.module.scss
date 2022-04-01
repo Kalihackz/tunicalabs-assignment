@@ -1,0 +1,29 @@
+// Select options customization
+.select-wrapper {
+    background-color: rgb(224, 221, 221);
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 0 8px;
+    select {
+        padding: 8px 0;
+        border: none;
+        background-color: transparent;
+        color: gray;
+        border-radius: 0;
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        outline: none;
+    }
+}
+.select-wrapper:after {
+    content: ' ';
+    height: 20px;
+    width: 10px;
+    position: absolute;
+    bottom: 5px;
+    right: 12px;
+    margin: 0 8px;
+    border-left: 2px solid black;
+}

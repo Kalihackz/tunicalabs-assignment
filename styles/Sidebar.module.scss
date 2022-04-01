@@ -1,0 +1,56 @@
+// Sidebar Interface
+.sidebar{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+	
+	// Fuction div
+	.functions{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 10px 10px;
+		color: gray;
+		border-bottom: 2px solid rgb(173, 172, 172);
+
+		// Shows options available as functions
+		.options{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin: 5px 0;
+			.text{
+				padding: 0 20px;
+			}
+		}
+
+		// Option that is active
+		.active{
+			color: red;
+		}
+	}
+
+	// Title of the menu
+	.employee{
+		display: flex;
+		padding: 0 10px;
+
+		// Denotes the text
+		.text{
+			color: gray;
+			font-size: 22px;
+			flex: 8;
+		}
+
+		// Drop down arrow
+		.arrow{
+			flex: 2;
+			width: 18px;
+			position: relative;
+			top: 3px;
+			left: 10px;
+			cursor: pointer;
+		}
+	}
+}

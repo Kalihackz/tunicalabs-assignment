@@ -4,3 +4,9 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+module.exports = {
+  env: {
+    MONGODB_URI:'mongodb+srv://admin:fakeaccount@cluster0.dkomh.mongodb.net/tunicalabs?retryWrites=true&w=majority'
+  },
+}
