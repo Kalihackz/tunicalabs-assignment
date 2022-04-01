@@ -14,7 +14,7 @@
 
  <br>
 
-<p align="center"><strong>NOTE : As we are using free tier for mongodb more than 3 request may result to 404</strong></p>
+<p align="center"><strong>NOTE : As we are using free tier for mongodb more than 3 concurrent connection may result to 404</strong></p>
 
 <br />
 
