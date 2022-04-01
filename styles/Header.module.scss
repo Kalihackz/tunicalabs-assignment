@@ -17,32 +17,38 @@
 
     // Admin part that will be visible on Header
     .admin{
-        flex: 1;
-        position: relative;
         display: grid;
-        grid-template-columns: 50px 3fr 1fr 1fr;
+        grid-template-columns: 1px 1fr 1fr 1fr;
         column-gap: 10px;
         justify-content: center;
         align-items: center;
         color: white;
 
-        // Number of notifications
-        .badge{
-            color: white;
-            position: absolute;
-            bottom: 17px;
-            right: 120px;
-            background-color: red;
-            min-width: 25px;
-            min-height: 25px;
-            text-align: center;
-            border-radius: 50%;
-        }
+        //Notification Div
+        .notify{
+            position: relative;
 
-        // Notification area
-        .notification{
-            width: 37px;
-            cursor: pointer;
+            // Number of notifications
+            .badge{
+                position: absolute;
+                color: white;
+                bottom: -2px;
+                right: 7px;
+                background-color: red;
+                min-width: 25px;
+                min-height: 25px;
+                text-align: center;
+                border-radius: 50%;
+            }
+
+            // Notification area
+            .notification{
+                position: absolute;
+                width: 37px;
+                cursor: pointer;
+                top: -19px;
+                right: 12px;
+            }
         }
 
         // Admin Name
@@ -73,8 +79,8 @@
                 color: black;
                 background-color: white;
                 font-weight: bold;
-                width: 30px;
-                height: 30px;
+                width: 40px;
+                height: 40px;
                 clip-path: circle(50%);
                 &:hover {
                     outline: none;

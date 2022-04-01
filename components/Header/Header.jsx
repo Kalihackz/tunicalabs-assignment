@@ -29,12 +29,15 @@ const Header = () => {
             {/* Render only when pathname is upload or dashboard */}
             { pathname == "/upload" || pathname == "/dashboard" ? 
                 <div className={styles.admin}>
-                    <img src={notification.src} alt="Notification" className={styles.notification} />
-                    <span className={styles.badge}>99</span>
+					<div className={styles.notify}>
+						<img src={notification.src} alt="Notification" className={styles.notification} />
+						<span className={styles.badge}>99</span>
+					</div>
                     <div className={styles.avatar}>
-                        <div className={styles['profile-btn']}>
+
+					<div className={styles['profile-btn']}>
                             <img title="Check Profile" className={styles['profile-btn__img']} src="/abir.png" alt="AG" />
-                        </div>
+                    </div>
                     </div>
                     <div className={styles.name}>Abir</div>
                     <img src={arrow.src} alt="arrow" className={styles.arrow}/>
