@@ -23,11 +23,13 @@ export default async function handler(req, res) {
         }
 
         let data = JSON.parse( req.body )
-
-        const count = await Student.count({})
+       
+        const lastDoc = await Student.find({}).sort({_id:-1}).limit(1)
+        
+        console.log(lastDoc)
 
         let student = new Student({
-            idv: count + 1,
+            idv: parseInt(lastDoc[0].idv) + 1,
             name: data.name,
             age: `${calculate_age( data.dob )}`,
             school: data.school,
