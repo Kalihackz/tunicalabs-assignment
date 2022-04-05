@@ -13,7 +13,7 @@ const signup = () => {
 				<meta charSet="UTF-8" />
 				<title>Signup | TunicaLabs Media</title>
 				<meta name="description" content="Sign Up to TunicaLabs Media." />
-				<meta property="og:site_name" content="TunicaLabs Media"/>
+				<meta property="og:site_name" content="TunicaLabs Media" />
 				<meta property="og:url" content="https://www.tunicalabsmedia.tk/" />
 				<meta property="og:image" content="https://www.tunicalabsmedia.tk/logo.png" />
 				<meta property="og:locale" content="en_GB" />
@@ -25,13 +25,13 @@ const signup = () => {
 			<div className={styles.signup}>
 				<h2>Sign Up Now</h2>
 				<div className={styles.email}>
-					<input type="text" placeholder="Your Email*" name="email" id="email" autoComplete="off"/>
+					<input type="text" placeholder="Your Email*" name="email" id="email" autoComplete="off" />
 				</div>
 				<div className={styles.password}>
-					<input type="password" placeholder="Your Password*" name="password" id="password" autoComplete="off"/>
+					<input type="password" placeholder="Your Password*" name="password" id="password" autoComplete="off" />
 				</div>
 				<div className={styles.confirmpassword}>
-					<input type="password" placeholder="Confirm Password*" name="confirmpassword" id="confirmpassword" autoComplete="off"/>
+					<input type="password" placeholder="Confirm Password*" name="confirmpassword" id="confirmpassword" autoComplete="off" />
 				</div>
 				<div className={styles.tos}>
 					<label className={styles.check}>
@@ -41,7 +41,7 @@ const signup = () => {
 					</label>
 				</div>
 				<div className={styles.submit}>
-					<input type="submit" value="Sign Up"/>
+					<input type="submit" value="Sign Up" />
 				</div>
 				<div className={styles.signin}>
 					<p>Already have an account? <Link href="/signin"><a><span>Sign In</span></a></Link></p>

@@ -1,108 +1,108 @@
-.header{
-    display: flex;
-    justify-content: flex-start;
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(177, 11, 11);
+  padding: 20px 50px;
+
+  // Title
+  .title {
+    flex: 9;
+  }
+
+  // Title for admin panel only
+  .titleadmin {
+    flex: 9;
+  }
+
+  // Admin part that will be visible on Header
+  .admin {
+    display: grid;
+    grid-template-columns: 1px 1fr 1fr 1fr;
+    column-gap: 10px;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(177, 11, 11);
-    padding: 20px 50px;
+    color: white;
 
-    // Title 
-    .title{
-        flex: 9;
-    }
+    //Notification Div
+    .notify {
+      position: relative;
 
-    // Title for admin panel only
-    .titleadmin{
-        flex: 9;
-    }
-
-    // Admin part that will be visible on Header
-    .admin{
-        display: grid;
-        grid-template-columns: 1px 1fr 1fr 1fr;
-        column-gap: 10px;
-        justify-content: center;
-        align-items: center;
+      // Number of notifications
+      .badge {
+        position: absolute;
         color: white;
+        bottom: -2px;
+        right: 7px;
+        background-color: red;
+        min-width: 25px;
+        min-height: 25px;
+        text-align: center;
+        border-radius: 50%;
+      }
 
-        //Notification Div
-        .notify{
-            position: relative;
-
-            // Number of notifications
-            .badge{
-                position: absolute;
-                color: white;
-                bottom: -2px;
-                right: 7px;
-                background-color: red;
-                min-width: 25px;
-                min-height: 25px;
-                text-align: center;
-                border-radius: 50%;
-            }
-
-            // Notification area
-            .notification{
-                position: absolute;
-                width: 37px;
-                cursor: pointer;
-                top: -19px;
-                right: 12px;
-            }
-        }
-
-        // Admin Name
-        .name{
-            cursor: default;
-        }
-
-        // Drop down arrow
-        .arrow{
-            width: 18px;
-            position: relative;
-            top: 2px;
-            cursor: pointer;
-        }
-
-        // Admin Avatar
-        .avatar{
-            border: 3px solid white;
-            border-radius: 50%;
-            text-align: center;
-
-            // Admin Profile Button
-            .profile-btn{
-                display: grid;
-                place-items: center;
-                border-radius: 50%;
-                cursor: pointer;
-                color: black;
-                background-color: white;
-                font-weight: bold;
-                width: 40px;
-                height: 40px;
-                clip-path: circle(50%);
-                &:hover {
-                    outline: none;
-                }
-
-                // Admin profile pic
-                &__img{
-                    width: 100%;
-                    overflow: hidden;
-                }
-            }
-        }
+      // Notification area
+      .notification {
+        position: absolute;
+        width: 37px;
+        cursor: pointer;
+        top: -19px;
+        right: 12px;
+      }
     }
+
+    // Admin Name
+    .name {
+      cursor: default;
+    }
+
+    // Drop down arrow
+    .arrow {
+      width: 18px;
+      position: relative;
+      top: 2px;
+      cursor: pointer;
+    }
+
+    // Admin Avatar
+    .avatar {
+      border: 3px solid white;
+      border-radius: 50%;
+      text-align: center;
+
+      // Admin Profile Button
+      .profile-btn {
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        color: black;
+        background-color: white;
+        font-weight: bold;
+        width: 30px;
+        height: 30px;
+        clip-path: circle(50%);
+        &:hover {
+          outline: none;
+        }
+
+        // Admin profile pic
+        &__img {
+          width: 100%;
+          overflow: hidden;
+        }
+      }
+    }
+  }
 }
 
 // Mobile responsive
 @media (max-width: 600px) {
-	.header{
-        .title {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-	}
+  .header {
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }

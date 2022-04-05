@@ -12,7 +12,7 @@ export default function Home() {
 				<meta charSet="UTF-8" />
 				<title>TunicaLabs Media</title>
 				<meta name="description" content="Welcome to TunicaLabs Media." />
-				<meta property="og:site_name" content="TunicaLabs Media"/>
+				<meta property="og:site_name" content="TunicaLabs Media" />
 				<meta property="og:url" content="https://www.tunicalabsmedia.tk/" />
 				<meta property="og:image" content="https://www.tunicalabsmedia.tk/logo.png" />
 				<meta property="og:locale" content="en_GB" />
@@ -24,11 +24,11 @@ export default function Home() {
 
 			<main className={styles.main}>
 				<h1 className={styles.title}>
-				Welcome to TunicaLabs Media
+					Welcome to TunicaLabs Media
 				</h1>
 
 				<p className={styles.description}>
-				Hey I&apos;m Abir Ghosh. This is a demo page that contains links to the pages that were given as an assignment to me.
+					Hey I&apos;m Abir Ghosh. This is a demo page that contains links to the pages that were given as an assignment to me.
 				</p>
 
 				<div className={styles.grid}>

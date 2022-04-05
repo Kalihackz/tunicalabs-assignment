@@ -16,7 +16,7 @@ a {
   box-sizing: border-box;
 }
 
-.layout{
+.layout {
   display: grid;
-  grid-template-areas: 'header' 'main';
+  grid-template-areas: "header" "main";
 }

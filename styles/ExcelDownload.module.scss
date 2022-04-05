@@ -1,0 +1,16 @@
+// Download Button
+.download {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(177, 11, 11);
+  width: 170px;
+  align-items: center;
+  .excel {
+    border: none;
+    outline: none;
+    padding: 10px 22px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+}

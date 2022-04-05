@@ -1,11 +1,19 @@
 import dbConnect from '../../../middleware/dbConnect';
 import Term from '../../../models/terms';
 
+// Sends class present in database
 export default async function handler(req, res) {
     
     await dbConnect()
 
     if ( req.method === 'GET' ) {
+
+        // Login cookie not present
+        if ( !req.headers.cookie ) {
+
+            return res.status(403).json({ success: 'false' })
+
+        }
 
         try {
             const terms = await Term.find({}).limit(9).exec()
