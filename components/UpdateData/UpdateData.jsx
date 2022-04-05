@@ -13,10 +13,9 @@ const UpdateData = ({ closeUpdateModal, isUpdateOpen, idRow }) => {
 		fetch(`/api/v1/student/${idRow}`)
 			.then(res => res.json())
 			.then(data => {
-				if ( data && data.success === 'true' ) {
+				if ( data && data.success === 'true' && data.data[0] ) {
 					return setFormData(data.data[0])
 				}
-				return alert('You are not signed in')
 			})
 			.catch(error => {
 				console.error("Can't fetch data from server")
