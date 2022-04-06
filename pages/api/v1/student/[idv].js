@@ -8,6 +8,12 @@ export default async function handler(req, res) {
 
 	if ( req.method === 'GET' ) {
 
+        if ( req.headers.referer !== 'https://tunicalabs-abir-kalihackz.vercel.app/' ) {
+
+            return res.status(403).json({ success: 'false' })
+
+        }
+
         // Login Cookie not present
         if ( !req.headers.cookie ) {
 

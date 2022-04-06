@@ -23,7 +23,10 @@ const Upload = () => {
 		fetch(url)
 			.then(res => res.json())
 			.then(data => {
-				return setCB(data.data)
+				if (data && data.success === 'true') {
+					return setCB(data.data)
+				}
+				return alert("Forbidden error")
 			})
 			.catch(error => {
 				console.error("Can't fetch data from server")
