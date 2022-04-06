@@ -3,7 +3,7 @@ import React from 'react'
 import styles from '../../styles/UpdateData.module.scss'
 
 // Receives the ID of the row that needs to be updated and performs updation
-const UpdateData = ({ closeUpdateModal, isUpdateOpen, idRow }) => {
+const UpdateData = ({ closeUpdateModal, isUpdateOpen, idRow, currentPage, fetchStudentsData }) => {
 
 	var [formData, setFormData] = React.useState({});
 
@@ -56,7 +56,9 @@ const UpdateData = ({ closeUpdateModal, isUpdateOpen, idRow }) => {
 			.then((resp) => resp.json())
 			.then((data) => {
 				if (data && data.success === 'true') {
-					return alert('Saved')
+					alert('Saved')
+					fetchStudentsData(currentPage)
+					return closeUpdateModal()
 				}
 				return alert('Not Saved')
 			})

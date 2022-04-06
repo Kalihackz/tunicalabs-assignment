@@ -272,8 +272,8 @@ const Dashboard = () => {
 				<link rel="canonical" href="https://www.tunicalabsmedia.tk/" />
 				<link rel="icon" href="/logo.png" type="image/icon type" />
 			</Head>
-			<Edit isUpdateOpen={isUpdateOpen} closeUpdateModal={closeUpdateModal} idRow={idRow} />
-			<Delete isDeleteOpen={isDeleteOpen} closeDeleteModal={closeDeleteModal} idRowDel={idRowDel} />
+			<Edit isUpdateOpen={isUpdateOpen} closeUpdateModal={closeUpdateModal} idRow={idRow} currentPage={currentPage} fetchStudentsData={fetchStudentsData} />
+			<Delete isDeleteOpen={isDeleteOpen} closeDeleteModal={closeDeleteModal} idRowDel={idRowDel} currentPage={currentPage} fetchStudentsData={fetchStudentsData} />
 			<div className={styles.container}>
 
 				{/* Include the Sidebar */}

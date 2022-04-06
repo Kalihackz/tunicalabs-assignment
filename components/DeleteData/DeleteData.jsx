@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from '../../styles/DeleteData.module.scss'
 
-const DeleteData = ({ closeDeleteModal, isDeleteOpen, idRowDel }) => {
+const DeleteData = ({ closeDeleteModal, isDeleteOpen, idRowDel, currentPage, fetchStudentsData }) => {
 
 	// Receives the ID of the row that needs to be deleted and performs deletion
 	const Delete = (data) => (event) => {
@@ -21,7 +21,9 @@ const DeleteData = ({ closeDeleteModal, isDeleteOpen, idRowDel }) => {
 			.then((resp) => resp.json())
 			.then((data) => {
 				if (data && data.success === 'true') {
-					return alert('Deleted... Please refresh')
+					alert('Deleted')
+					fetchStudentsData(currentPage)
+					return closeDeleteModal()
 				}
 				return alert('Not Deleted')
 			})
